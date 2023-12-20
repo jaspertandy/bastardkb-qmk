@@ -217,13 +217,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       break;
     case VIM_VP:
       if (record->event.pressed) {
-        SEND_STRING(SS_TAP(X_ESCAPE)",vp");
+        SEND_STRING(SS_TAP(X_ESCAPE)"\\vp");
       }
       return false;
       break;
     case VIM_VR:
       if (record->event.pressed) {
-        SEND_STRING(SS_TAP(X_ESCAPE)",r");
+        SEND_STRING(SS_TAP(X_ESCAPE)"\\r");
       }
       return false;
       break;
